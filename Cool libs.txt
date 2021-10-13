@@ -1,0 +1,21 @@
+1. SweetViz - low-code visualisation library
+Example: 
+ my_report = sv.analyze(dataframe)
+ my_report.show_html()
+ 
+ 
+2. Dabl - autoclean and check ML models
+Example:
+ dabl.clean(data)
+ X, y = load_digits(return_X_y=True)
+ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
+ sc = dabl.SimpleClassifier().fit(X_train, y_train)
+ print(“Accuracy score”, sc.score(X_test, y_test))
+ 
+3. Geemap - interactive Google carts
+Example:
+ import geemap.eefolium as geemap
+ Map = geemap.Map(center=[40,-100], zoom=4)
+ Map
+ 
+4. Pyforest - lazy loading of 40 libs into ML models
